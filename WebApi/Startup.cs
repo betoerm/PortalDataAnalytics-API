@@ -19,7 +19,7 @@ namespace WebApi
     {
         private readonly IWebHostEnvironment _env;
         private readonly IConfiguration _configuration;
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+        
 
         public Startup(IWebHostEnvironment env, IConfiguration configuration)
         {
@@ -39,21 +39,7 @@ namespace WebApi
                 options.UseSqlServer(_configuration.GetConnectionString("MyDbConnection"))
             );*/
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy(name: MyAllowSpecificOrigins,
-                                  builder =>
-                                  {
-                                      builder.WithOrigins("http://localhost:8080",
-                                                          "http://localhost:5000")
-                                        //.AllowAnyOrigin()
-                                        .AllowAnyMethod()
-                                        .AllowAnyHeader()
-                                        .SetIsOriginAllowed(origin => true)// allow any origin);
-                                        .AllowCredentials();
-                                  });
-            });
-
+            services.AddCors();
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -111,7 +97,11 @@ namespace WebApi
             app.UseRouting();
 
             // global cors policy
-            app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors(x => x
+                 .AllowAnyMethod()
+                 .AllowAnyHeader()
+                 .SetIsOriginAllowed(origin => true) // allow any origin
+                 .AllowCredentials()); // allow credentials
 
             app.UseAuthentication();
             app.UseAuthorization();

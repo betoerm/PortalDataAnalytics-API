@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RWI9Ezag1UjAQaSwzcpE43J67un4XWBvlFpvYbGUi6dqa4xmkDmNu5bU7u/T9gWd7kY57EC28AOYFSL5xbaiaQ==",
+  "dgSpecHash": "9jwk+tn6o4/5B93hyggnKG8o1MoZsnvK22VlO1FcC4FecSYUe9yiiAhp+QtUYSRzFcHQn2jKgbKUmvMpVilKEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caoae\\source\\repos\\PortalDataAnalytics\\WebApi\\WebApi\\WebApi.csproj",
+  "projectFilePath": "D:\\DevWeb\\PIA\\PortalDataAnalytics\\PortalDataAnalytics - API\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caoae\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\caoae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

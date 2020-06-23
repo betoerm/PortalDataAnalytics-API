@@ -8585,11 +8585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caoae\\source\\repos\\PortalDataAnalytics\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\DevWeb\\PIA\\PortalDataAnalytics\\PortalDataAnalytics - API\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\caoae\\source\\repos\\PortalDataAnalytics\\WebApi\\WebApi\\WebApi.csproj",
+      "projectPath": "D:\\DevWeb\\PIA\\PortalDataAnalytics\\PortalDataAnalytics - API\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\caoae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caoae\\source\\repos\\PortalDataAnalytics\\WebApi\\WebApi\\obj\\publish\\win-x86\\",
+      "outputPath": "D:\\DevWeb\\PIA\\PortalDataAnalytics\\PortalDataAnalytics - API\\WebApi\\obj\\publish\\win-x86\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
