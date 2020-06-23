@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using WebApi.Entities;
@@ -71,9 +73,16 @@ namespace WebApi.Services
             if (!string.IsNullOrWhiteSpace(toolParam.Description))
                 tool.Description = toolParam.Description;
 
-            if (!string.IsNullOrWhiteSpace(toolParam.Url))
+            if (!string.IsNullOrWhiteSpace(toolParam.Type))
+                tool.Type = toolParam.Type;
+
+            if (!string.IsNullOrWhiteSpace(toolParam.Location))
+                tool.Location = toolParam.Location;
+
+
+            if (!string.IsNullOrWhiteSpace(toolParam.Provedor))
             {
-                tool.Url = toolParam.Url;                
+                tool.Provedor = toolParam.Provedor;                
 
                 _context.Tools.Update(tool);
                 _context.SaveChanges();
